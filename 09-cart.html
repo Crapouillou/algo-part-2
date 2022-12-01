@@ -41,16 +41,24 @@
     function cartValue() {
         let articles = document.getElementById("articles");
         let selectedArticle = articles.options[articles.selectedIndex].value;
-        /*selectedArticle = parseInt(30)
-        let resultat = 1
-        if ((promotion === VALID_PROMOTION_CODE) &&
-            (selectedArticle === True)){
-            resultat = parseInt.selectedArticle + 0.9;
-            } 
-           alert(resultat)   */
-           if selectedArticle = 
+        let promotion = document.getElementById("promotion").value;
+        let price;
+
+        if(selectedArticle === 'one'){
+            price=30;}
+            else{
+                price=50;
+            
+            }
+            if (promotion === VALID_PROMOTION_CODE){
+                price = price - (price * 0.1);
+
+            }
+            alert("lafkjlnbkjfgabkjlrzgbfeoug" + price)
+  
+        }
         
-        } 
+        
         // if (selectedArticle == "one") && (promotion ===VALID_PROMOTION_CODE)
         // alert(la valeur de votre panier est de 27) 
         
